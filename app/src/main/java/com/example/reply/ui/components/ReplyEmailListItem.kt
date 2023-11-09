@@ -79,9 +79,11 @@ fun ReplyEmailListItem(
                 ) {
                     Text(
                         text = email.sender.firstName,
+                        style = MaterialTheme.typography.labelMedium
                     )
                     Text(
                         text = email.createdAt,
+                        style = MaterialTheme.typography.labelMedium
                     )
                 }
                 IconButton(
@@ -100,10 +102,12 @@ fun ReplyEmailListItem(
             Text(
                 text = email.subject,
                 modifier = Modifier.padding(top = 12.dp, bottom = 8.dp),
+                style = MaterialTheme.typography.titleLarge
             )
             Text(
                 text = email.body,
                 maxLines = 2,
+                style = MaterialTheme.typography.bodyLarge,
                 overflow = TextOverflow.Ellipsis
             )
         }
